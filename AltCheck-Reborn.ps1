@@ -28,7 +28,7 @@ function checkAltServer {
 }
 
 function restartAppleMobileDeviceService {
-    Write-Host [INFO] Restarting Apple Mobile Device Service
+    Write-Host [INFO] Restarting $appleServiceName
     try {
         Restart-Service -Name $appleServiceName -ErrorAction Stop
         Write-Host [OK] Action completed
