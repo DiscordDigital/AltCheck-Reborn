@@ -12,7 +12,9 @@ When you get a prompt, make sure to "Always trust", so you can automate the laun
 For scheduled tasks you have to launch powershell with following arguments:\
 <path of AltCheck-Reborn.ps1> -Mode serviceMonitor\
 <path of AltCheck-Reborn.ps1> -Mode checkAltServer
+6. Always launch PowerShell as Administrator or elevated privileges, otherwise service restarts won't work.
 
+## Optional parameters
 The service monitor checks if the "Apple Mobile Device Service" is running.\
 If the service ever gets renamed you can specify a different service name using the "-appleServiceName" parameter.
 
@@ -24,4 +26,5 @@ Following optional parameters are available:
 -altServerPath (Path of AltServer.exe)\
 -appleServiceName (Name of the Apple Mobile Device Service)
 
+## iMobileDevice download
 Quamotion iMobileDevice for 64-bit: http://docs.quamotion.mobi/docs/imobiledevice/download/
