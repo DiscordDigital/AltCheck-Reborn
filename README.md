@@ -20,7 +20,7 @@ If you make use of the Windows Firewall make sure to create two new rules contai
 
 Rules need to be created for: **Incoming connections**\
 **TCP** Ports 123, 3689\
-**UDP** Ports 123, 5353\
+**UDP** Ports 123, 5353
 
 Also create a rule for the AltServer.exe binary for incoming TCP and UDP connections on all ports.
 
