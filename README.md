@@ -14,6 +14,16 @@ For scheduled tasks you have to launch the PowerShell script with following argu
 <path of AltCheck-Reborn.ps1> -Mode checkAltServer
 6. Always launch PowerShell as Administrator or elevated privileges, otherwise service restarts won't work.
 
+## Windows Firewall
+For best results you may want to disable your Windows Firewall.\
+If you make use of the Windows Firewall make sure to create two new rules containing following:
+
+Rules need to be created for: **Incoming connections**\
+**TCP** Ports 123, 3689\
+**UDP** Ports 123, 5353\
+
+Also create a rule for the AltServer.exe binary for incoming TCP and UDP connections on all ports.
+
 ## Optional parameters
 The service monitor checks if the "Apple Mobile Device Service" is running.\
 If the service ever gets renamed you can specify a different service name using the "-appleServiceName" parameter.
