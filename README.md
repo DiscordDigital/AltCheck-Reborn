@@ -37,4 +37,5 @@ Following optional parameters are available:
 -appleServiceName (Name of the Apple Mobile Device Service)
 
 ## iMobileDevice download
-Quamotion iMobileDevice for 64-bit: http://docs.quamotion.mobi/docs/imobiledevice/download/
+Quamotion iMobileDevice for 64-bit: ~~http://docs.quamotion.mobi/docs/imobiledevice/download/~~ \
+Link from wayback machine: https://web.archive.org/web/20190415225927if_/https://qmcdn.blob.core.windows.net/imobiledevice/imobiledevice-x64-1.2.1-r223.zip
