@@ -6,13 +6,14 @@ A port of classic AltCheck for Windows into PowerShell, to improve stability and
 2. Extract the zip file and name the folder "imobiledevice", make sure this folder is next to the AltCheck-Reborn.ps1 file.
 3. Start PowerShell and type: Get-ExecutionPolicy\
 If it doesn't output "RemoteSigned", you have to change it with "Set-ExecutionPolicy RemoteSigned".
-4. Navigate with the PowerShell to the AltCheck-Reborn.ps1 file and run it once to see if it executes. ".\AltCheck-Reborn.ps1"\
+4. Run "Unblock-File .\Altcheck-Reborn.ps1".
+5. Navigate with the PowerShell to the AltCheck-Reborn.ps1 file and run it once to see if it executes. ".\AltCheck-Reborn.ps1"\
 When you get a prompt, make sure to "Always trust", so you can automate the launching of this file without confirmation every time.
-5. Either create shortcuts yourself, or create two scheduled tasks.\
+6. Either create shortcuts yourself, or create two scheduled tasks.\
 For scheduled tasks you have to launch the PowerShell script with following arguments:\
 <path of AltCheck-Reborn.ps1> -Mode serviceMonitor\
 <path of AltCheck-Reborn.ps1> -Mode checkAltServer
-6. Always launch PowerShell as Administrator or elevated privileges, otherwise service restarts won't work.
+7. Always launch PowerShell as Administrator or elevated privileges, otherwise service restarts won't work.
 
 ## Windows Firewall
 For best results you may want to disable your Windows Firewall.\
