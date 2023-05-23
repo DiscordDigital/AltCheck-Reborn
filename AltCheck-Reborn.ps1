@@ -42,7 +42,7 @@ function restartAppleMobileDeviceService {
 
 if ($Mode -eq "serviceMonitor") {
     while($true) {
-        $deviceCount = ("$iMobileDeviceFolder\idevice_id.exe -l" | Measure-Object).Count
+        $deviceCount = (cmd /c $iMobileDeviceFolder\idevice_id.exe -l).Count
         if ($deviceCount -eq "0") {
             Write-Host [WARN] No devices found. Restarting $appleServiceName.
             restartAppleMobileDeviceService
